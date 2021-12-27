@@ -1,0 +1,60 @@
+.loading {
+    text-align: center !important;
+    padding: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
+    width: 100% !important;
+    border: 0 !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 15px !important;
+    box-shadow: 0 8px 30px rgb(0 0 0 / 5%) !important;
+}
+.snippet {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 0.5rem !important;
+}
+
+
+.dotTyping {
+    position: relative;
+    left: -9999px;
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: var(---theme-color);
+    color: #9880ff;
+    box-shadow: none;
+    animation: dotsTyping 1.5s infinite linear;
+    top: -4px;
+    position: relative;
+}
+@keyframes dotsTyping {
+    0% {
+        box-shadow: 9984px 0 0 0 #05f, 9995px 0 0 0 #05f, 10005px 0 0 0 #05f;
+    }
+    16.667% {
+        box-shadow: 9984px -10px 0 0 #05f, 9995px 0 0 0 #05f, 10005px 0 0 0 #05f;
+    }
+    33.333% {
+        box-shadow: 9984px 0 0 0 #05f, 9995px 0 0 0 #05f, 10005px 0 0 0 #05f;
+    }
+    50% {
+        box-shadow: 9984px 0 0 0 #05f, 9995px -10px 0 0 #05f, 10005px 0 0 0 #05f;
+    }
+    66.667% {
+        box-shadow: 9984px 0 0 0 #05f, 9995px 0 0 0 #05f, 10005px 0 0 0 #05f;
+    }
+    83.333% {
+        box-shadow: 9984px 0 0 0 #05f, 9995px 0 0 0 #05f, 10005px -10px 0 0 #05f;
+    }
+    100% {
+        box-shadow: 9984px 0 0 0 #05f, 9995px 0 0 0 #05f, 10005px 0 0 0 #05f;
+    }
+}

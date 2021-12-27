@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    margin-top: -20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-family: Hape;
+    font-size: 40px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}

@@ -1,0 +1,363 @@
+.navbar {
+    color: #0b091f;
+    margin: 0;
+    position: fixed;
+    transition: all .6s ease;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    background-color: #fff;
+
+}
+@media only screen and (min-width: 992px){
+.navbar {
+    left: 0;
+    top: 0;
+    
+}}
+@media only screen and (max-width: 991px){
+.navbar {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: all .6s ease;
+}}
+.scrolling {
+    background-color: #0b091f;
+    color: #fff;
+    margin-top: 0;
+}
+
+.navbarContainer {
+    display: flex;
+    height: 41px;
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (min-width: 992px){
+.navbarContainer {
+    box-sizing: content-box;
+    height: 44px;
+    padding: 10px 0;
+}}
+@media only screen and (min-width: 768px){
+.navbarContainer {
+    width: 92%;
+}}
+.navbarContainer:before {
+    content: " ";
+    display: table;
+}
+
+
+.navbarLogo {
+    flex: 0 0 120px;
+    transform-origin: center left;
+    transition: transform .3s ease;
+}
+@media only screen and (min-width: 992px){
+.navbarLogo {
+    flex: 0 0 130px;
+}}
+.navbarLogo img {
+    height: 40px;
+}
+@media only screen and (min-width: 992px){
+.navbarLogo a {
+    display: block;
+}}
+
+@media only screen and (min-width: 992px){
+.mobileBtn {
+    display: none;
+}}
+
+@media only screen and (max-width: 991px){
+.mobileBtn {
+    display: flex;
+    flex: 0 0 calc(100% - 120px);
+    justify-content: flex-end;
+
+}}
+@media only screen and (max-width: 991px){
+.mobileBtn button {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}}
+
+@media only screen and (max-width: 991px){
+.mobileBtn .btnText {
+    position: relative;
+    transition: all .4s ease;
+}}
+
+.btnText span {
+    font-size: clamp(15.2px,4vw,17.46px);
+    font-weight: 600;
+    font-family: Hape;
+}
+.scrolling .btnText {
+    color: #fff;
+}
+@media only screen and (max-width: 991px){
+.lines {
+    margin-left: 14px;
+}}
+.lines span {
+    background-color: #0b091f;
+}
+.scrolling .lines span {
+    background-color: #fff;
+}
+@media only screen and (max-width: 991px){
+.lines span.indicator {
+    margin-bottom: 7px;
+    width: 21px;
+}}
+@media only screen and (max-width: 991px){
+.opened .mobileBtn .lines span.indicator {
+    transform: translateY(5px);
+}}
+@media only screen and (max-width: 991px){
+.opened .mobileBtn .lines span {
+    background-color: #fff;
+}}
+.opened .mobileBtn .lines span:not(.indicator) {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+@media only screen and (max-width: 991px){
+.lines span {
+    display: block;
+    height: 2px;
+    transition: all .4s ease;
+    width: 13px;
+}}
+@media only screen and (min-width: 992px){
+.navWrap {
+    flex: 0 0 calc(100% - 130px);
+}}
+
+@media only screen and (min-width: 992px){
+.menuMobile, .mobileSocial {
+    display: none;
+}}
+
+@media only screen and (max-width: 991px){
+.opened .menuMobile {
+    background: #0b091f;
+    color: #fff;
+    display: block;
+    height: calc(100vh + 20px);
+    left: 0;
+    opacity: 0;
+    overflow-y: scroll;
+    padding: 124px 25px 60px;
+    position: fixed;
+    top: -20px;
+    /* transform: scale(0); */
+    width: 100%;
+    z-index: -1;
+    transition: all .4s ease-in-out;
+}}
+@media only screen and (max-width: 991px){
+.mobileNav>ul>li.noClick {
+    cursor: pointer;
+}}
+@media only screen and (max-width: 991px){
+.mobileNav>ul>li {
+    margin-bottom: 4px;
+    text-align: right;
+}}
+
+@media only screen and (max-width: 991px){
+.mobileNav>ul>li.noClick a {
+    transition: all .3s ease;
+}}
+@media only screen and (max-width: 991px){
+.mobileNav>ul>li a {
+    display: inline-block;
+    font-family: Hurme;
+    font-size: clamp(28.81px,7.7vw,36.69px);
+    padding: 8px 0;
+}}
+
+@media only screen and (max-width: 991px){
+.mobileNav>ul>li .subMenu {
+    padding: 10px 0 15px;
+}}
+@media only screen and (max-width: 991px){
+.mobileNav>ul>li .subMenu li {
+    text-align: right;
+}}
+@media only screen and (max-width: 991px){
+.mobileNav>ul>li .subMenu a {
+    font-size: 16px;
+}}
+@media only screen and (max-width: 991px){
+.mobileNav>ul>li.noClick a {
+    transition: all .3s ease;
+}}
+
+.subMenuWrap {
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+.subMenuWrapMobile {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+}
+.naviguated {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+@media only screen and (max-width: 991px){
+.mobileSocial {
+    margin-top: 60px;
+}}
+.mobileSocial p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: right;
+    color: rgba(138,141,160);
+    font-family: Hurme;
+}
+@media only screen and (max-width: 991px){
+.mobileSocial ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}}
+@media only screen and (max-width: 991px){
+.mobileSocial ul li {
+    flex: 0 0 21px;
+    margin-left: 25px;
+}}
+.mobileSocial ul a path {
+    fill: #fff;
+    transition: all .6s ease;
+}
+
+.menuDesktop, .desktopNav {
+    height: 100%;
+}
+
+@media only screen and (max-width: 991px){
+.menuDesktop {
+    display: none;
+}}
+@media only screen and (min-width: 992px){
+    .desktopNav>ul {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (min-width: 992px){
+.desktopNav>ul>li {
+    font-size: 13px;
+    margin-left: 32px;
+    font-family: Hape;
+    position: relative;
+    cursor: pointer;
+}}
+
+@media only screen and (min-width: 992px){
+.desktopNav>ul>li.menuItemHasChildren>a {
+    padding-right: 18px;
+    position: relative;
+}}
+
+@media only screen and (min-width: 992px){
+.desktopNav>ul>li .subMenuWrap {
+    background: #fff;
+    border: 1px solid #ededed;
+    box-shadow: 5px 5px 0 rgb(227 227 227 / 25%);
+    left: -25px;
+    opacity: 0;
+    padding: 15px 27px;
+    position: absolute;
+    top: 180%;
+    transform: translateY(20px);
+    transition: all .3s ease;
+    visibility: hidden;
+    width: auto;
+}}
+@media only screen and (min-width: 992px){
+.subMenuWrap ul {
+    padding: 0;
+}}
+@media only screen and (min-width: 992px){
+.subMenuWrap ul li a{
+    display: block;
+    padding: 6px 0;
+    white-space: nowrap;
+    color: #0b091f;
+}}
+@media only screen and (min-width: 992px){
+.desktopNav>ul>li.clicked>.subMenuWrap  {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}}
+@media only screen and (min-width: 992px){
+.desktopNav>ul>li.clicked>a {
+    opacity: .6;
+}}
+.desktopNav>ul>li.menuItemHasChildren>a:after {
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    content: " ";
+    display: block;
+    height: 7px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    transform-origin: center;
+    transition: transform .4s ease;
+    width: 7px;
+}
+@media only screen and (min-width: 992px){
+.desktopNav>ul>li.clicked>a:after {
+    transform: translateY(-50%) rotate(
+135deg);
+}}
+@media only screen and (min-width: 992px){
+.desktopNav>ul>li .subMenuWrap ul li {
+    font-size: 15px;
+    margin: 8px 0;
+    font-family: Hurme;
+    position: relative;
+}}
+
+.contactBtn a {
+    background: #0b091f;
+    color: #fff;
+    display: inline-block;
+    font-family: freight-text-pro,serif;
+    font-weight: 900;
+    line-height: 1.375;
+    padding: 11px 23px;
+    position: relative;
+    text-align: center;
+    transition: background .6s ease;
+}
+.scrolling .contactBtn a {
+    background: #fff;
+    color: #0b091f;
+}
+
+.userImg img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #000
+}
