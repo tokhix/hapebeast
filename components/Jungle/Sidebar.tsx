@@ -79,21 +79,21 @@ const Sidebar: NextPage = () => {
             </div>
             <div className={styles.cardEvent}>
                 <div className={styles.cardBg} style={{backgroundColor: '#FE9431'}}>
-                    <h4><span>APR</span>13</h4>
+                    <h4><span>JAN</span>19</h4>
                 </div>
-                <h4 className={styles.eventInfo}>Meeting with clients <span>41 madison ave, floor 24 new work, NY 10010</span> </h4>
+                <h4 className={styles.eventInfo}>First Collection Drop <span>A drop of 8,192 unique hapes on the Ethereum Blockchain</span> </h4>
             </div>
             <div className={styles.cardEvent} >
                 <div className={styles.cardBg} style={{backgroundColor: '#10d876'}}>
-                    <h4><span >APR</span>22</h4>
+                    <h4><span >FEV</span>22</h4>
                 </div>
-                <h4 className={styles.eventInfo}>Developer Programe <span>41 madison ave, floor 24 new work, NY 10010</span> </h4>
+                <h4 className={styles.eventInfo}>Hapeventure Day <span>NFTs are good, but saving the planet is better, join us!</span> </h4>
             </div>
             <div className={styles.cardEvent}>
                 <div className={styles.cardBg} style={{backgroundColor: '#10d876'}}>
                     <h4><span>APR</span>30</h4>
                 </div>
-                <h4 className={styles.eventInfo}>Aniversary Event <span>41 madison ave, floor 24 new work, NY 10010</span> </h4>
+                <h4 className={styles.eventInfo}>Music to HAPE to  <span>The best musicians will gather, prove your talent!</span> </h4>
             </div>
         </div>
 
