@@ -2,13 +2,13 @@
 .sidebar {
     padding-left: 0 !important;
     flex: 0 0 auto;
-    width: 33.3333333333%;
+    width: 33.3333333333% !important;
 }
 }
 @media (min-width: 1200px){
 .sidebar {
     flex: 0 0 auto;
-    width: 33.3333333333%;
+    width: 33.3333333333% !important;
 }
 }
 
