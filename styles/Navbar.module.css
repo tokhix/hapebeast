@@ -7,6 +7,8 @@
     z-index: 999;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
     background-color: #fff;
+    left: 0;
+    top: 0;
 
 }
 @media only screen and (min-width: 992px){
@@ -146,13 +148,15 @@
 .menuMobile, .mobileSocial {
     display: none;
 }}
-
+.mobileNav, .mobileSocial {
+    opacity: 0;
+}
 @media only screen and (max-width: 991px){
 .opened .menuMobile {
     background: #0b091f;
     color: #fff;
     display: block;
-    height: calc(100vh + 20px);
+    height: calc(100vh + 50px);
     left: 0;
     opacity: 0;
     overflow-y: scroll;
@@ -173,7 +177,9 @@
     margin-bottom: 4px;
     text-align: right;
 }}
-
+.opened .mobileNav,.opened .mobileSocial {
+    opacity: 1;
+}
 @media only screen and (max-width: 991px){
 .mobileNav>ul>li.noClick a {
     transition: all .3s ease;
@@ -181,7 +187,7 @@
 @media only screen and (max-width: 991px){
 .mobileNav>ul>li a {
     display: inline-block;
-    font-family: Hurme;
+    font-family: Hape;
     font-size: clamp(28.81px,7.7vw,36.69px);
     padding: 8px 0;
 }}
@@ -203,19 +209,6 @@
     transition: all .3s ease;
 }}
 
-.subMenuWrap {
-    overflow: hidden;
-    transition: max-height 0.4s ease-out;
-}
-.subMenuWrapMobile {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.4s ease-out;
-}
-.naviguated {
-    max-height: 500px;
-    transition: max-height 0.5s ease-in;
-}
 @media only screen and (max-width: 991px){
 .mobileSocial {
     margin-top: 60px;
@@ -225,7 +218,7 @@
     margin-bottom: 15px;
     text-align: right;
     color: rgba(138,141,160);
-    font-family: Hurme;
+    font-family: Hape;
 }
 @media only screen and (max-width: 991px){
 .mobileSocial ul {

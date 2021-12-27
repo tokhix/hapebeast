@@ -8,38 +8,38 @@ const Communities: NextPage = () => {
         {
            name: 'Arabic Community',
            img: '/imgs/users/0.jpg',
-           description: '/imgs/users/1.jpg',
-           header: '/imgs/users/1.jpg'
+           description: 'Arab Hapes are here',
+           header: '/imgs/users/arab.jpg'
         },
         {
            name: 'French Community',
            img: '/imgs/users/12.jpg',
-           description: '/imgs/users/2.jpg',
-           header: '/imgs/users/1.jpg'
+           description: 'French baguette, Bonjour!',
+           header: '/imgs/users/france.jpg'
         },
         {
            name: 'Mental Health',
            img: '/imgs/users/13.jpg',
-           description: '/imgs/users/3.jpg',
-           header: '/imgs/users/1.jpg'
+           description: 'We care about you mental health',
+           header: '/imgs/users/mentalhealth.jpg'
         },
         {
            name: 'Italian Community',
            img: '/imgs/users/16.jpg',
-           description: '/imgs/users/4.jpg',
-           header: '/imgs/users/1.jpg'
+           description: 'Ciao Bella, Ciao Ciao Ciao',
+           header: '/imgs/users/italy.jpg'
         },
         {
            name: 'Philippines Community',
            img: '/imgs/users/15.jpg',
-           description: '/imgs/users/4.jpg',
-           header: '/imgs/users/1.jpg'
+           description: 'We live in paradise :)',
+           header: '/imgs/users/philippines.jpg'
         },
         {
             name: 'Sports',
             img: '/imgs/users/14.jpg',
-            description: '/imgs/users/4.jpg',
-            header: '/imgs/users/1.jpg'
+            description: 'Everything sports related here!',
+            header: '/imgs/users/sports.jpg'
         },
       ]
   return (
@@ -78,18 +78,18 @@ const Communities: NextPage = () => {
                             delay: (index + 1) * 0.1
                         }}>
                         <div className={styles.communityContainer}>
-                            <div className={styles.communityBg} style={{backgroundImage: "url('http://sociala.uitheme.net/assets/images/bb-16.png')"}}></div>
+                            <div className={styles.communityBg} style={{backgroundImage: `url('${community.header}')`}}></div>
                             <div className={styles.communityInfo}>
                                 <figure className={styles.communityImg}>
                                     <img src={community.img} alt="avater" />
                                 </figure>
                                 <h4>{community.name}</h4>
-                                <p>support@gmail.com</p>
+                                <p>{community.description}</p>
                                 <span className={styles.communityBtns}>
                                     <a href="/defaultgroup" className={styles.Btn1}>
                                         <span className="lnr lnr-user"></span>
                                     </a>
-                                    <a href="/defaultgroup" className={styles.Btn2}>FOLLOW</a>
+                                    <a href="/defaultgroup" className={styles.Btn2}>JOIN</a>
                                 </span>
                             </div>
                         </div></motion.div>

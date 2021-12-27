@@ -180,6 +180,7 @@
     margin-top: 1.5rem !important;
     font-size: 12px !important;
     letter-spacing: 1px;
+    font-family: hape;
 }
 @media (max-width: 1500px){
 .card h4 {
@@ -193,6 +194,7 @@
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0.5rem;
+    font-family: hape;
 }
 
 .fw700 {
@@ -205,6 +207,7 @@
     line-height: 26px;
     margin-top: 0;
     margin-bottom: 1rem;
+    font-family: Barlow;
 }
 @media (min-width: 992px){
 .card p {
@@ -225,6 +228,7 @@
     letter-spacing: 1px;
     width: 150px !important;
     background: linear-gradient(135deg, #05f, #09f) !important;
+    font-family: Hape;
 }
 
 @media (min-width: 992px){

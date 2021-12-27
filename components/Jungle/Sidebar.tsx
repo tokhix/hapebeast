@@ -97,35 +97,35 @@ const Sidebar: NextPage = () => {
             </div>
         </div>
 
-        {/* <div className={styles.card}>
+        <div className={styles.card}>
             <div className={styles.cardTitle}>
-                <h4>Photos</h4>
+                <h4>Arts</h4>
                 <a href="/home">See all</a>
             </div>
             <div className={styles.cardGalery}>
                 <div className={styles.galery}>
                     <div className={styles.photo}>
-                        <div><a href="#portfolio-details"><img src="http://sociala.uitheme.net/assets/images/e-1.jpg" alt="Portfolio" className="img-fluid rounded-3 w-100" /></a></div>
+                        <img src="/imgs/posts/fanart1.jpg" alt="Portfolio"/>
                     </div>
                     <div className={styles.photo}>
-                        <div><a href="#portfolio-details"><img src="http://sociala.uitheme.net/assets/images/e-1.jpg" alt="Portfolio" className="img-fluid rounded-3 w-100" /></a></div>
+                        <img src="/imgs/posts/fanart2.jpg" alt="Portfolio"/>
                     </div>
                     <div className={styles.photo}>
-                        <div><a href="#portfolio-details"><img src="http://sociala.uitheme.net/assets/images/e-1.jpg" alt="Portfolio" className="img-fluid rounded-3 w-100" /></a></div>
+                        <img src="/imgs/posts/fanart3.jpg" alt="Portfolio"/>
                     </div>
                     <div className={styles.photo}>
-                        <div><a href="#portfolio-details"><img src="http://sociala.uitheme.net/assets/images/e-1.jpg" alt="Portfolio" className="img-fluid rounded-3 w-100" /></a></div>
+                        <img src="/imgs/posts/fanart4.jpg" alt="Portfolio"/>
                     </div>
                     <div className={styles.photo}>
-                        <div><a href="#portfolio-details"><img src="http://sociala.uitheme.net/assets/images/e-1.jpg" alt="Portfolio" className="img-fluid rounded-3 w-100" /></a></div>
+                        <img src="/imgs/posts/fanart5.jpg" alt="Portfolio"/>
                     </div>
                     <div className={styles.photo}>
-                        <div><a href="#portfolio-details"><img src="http://sociala.uitheme.net/assets/images/e-1.jpg" alt="Portfolio" className="img-fluid rounded-3 w-100" /></a></div>
+                        <img src="/imgs/posts/fanart6.jpg" alt="Portfolio"/>
                     </div>
                 </div>
             </div>
             <div className={styles.moreBtn}><a href="/home"><i className="far fa-share-square"></i> More</a></div>
-        </div> */}
+        </div>
     </div>
   )
 }

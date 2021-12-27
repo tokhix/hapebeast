@@ -7,33 +7,63 @@ const Arts: NextPage = () => {
     const arts = [
         {
            name: 'Arabic Community',
-           img: '/imgs/users/0.jpg',
-           description: '/imgs/users/1.jpg',
+           img: '/imgs/posts/fanart1.jpg',
+           avatar: '/imgs/users/4.jpg',
         },
         {
            name: 'French Community',
-           img: '/imgs/users/12.jpg',
-           description: '/imgs/users/2.jpg',
+           img: '/imgs/posts/fanart11.jpg',
+           avatar: '/imgs/users/5.jpg',
         },
         {
            name: 'Mental Health',
-           img: '/imgs/users/13.jpg',
-           description: '/imgs/users/3.jpg',
+           img: '/imgs/posts/story2.jpg',
+           avatar: '/imgs/users/6.jpg',
         },
         {
            name: 'Italian Community',
-           img: '/imgs/users/16.jpg',
-           description: '/imgs/users/4.jpg',
+           img: '/imgs/posts/fanart2.jpg',
+           avatar: '/imgs/users/9.jpg',
         },
         {
            name: 'Philippines Community',
-           img: '/imgs/users/15.jpg',
-           description: '/imgs/users/4.jpg',
+           img: '/imgs/posts/fanart6.jpg',
+           avatar: '/imgs/users/11.jpg',
         },
         {
             name: 'Sports',
-            img: '/imgs/users/14.jpg',
-            description: '/imgs/users/4.jpg',
+            img: '/imgs/posts/fanart12.jpg',
+            avatar: '/imgs/users/7.jpg',
+        },
+        {
+            name: 'Sports',
+            img: '/imgs/posts/fanart4.jpg',
+            avatar: '/imgs/users/10.jpg',
+        },
+        {
+            name: 'Sports',
+            img: '/imgs/posts/fanart3.jpg',
+            avatar: '/imgs/users/12.jpg',
+        },
+        {
+            name: 'Sports',
+            img: '/imgs/posts/fanart8.jpg',
+            avatar: '/imgs/users/13.jpg',
+        },
+        {
+            name: 'Sports',
+            img: '/imgs/posts/fanart7.jpg',
+            avatar: '/imgs/users/14.jpg',
+        },
+        {
+            name: 'Sports',
+            img: '/imgs/posts/fanart9.jpg',
+            avatar: '/imgs/users/15.jpg',
+        },
+        {
+            name: 'Sports',
+            img: '/imgs/posts/fanart10.jpg',
+            avatar: '/imgs/users/16.jpg',
         },
       ]
   return (
@@ -73,13 +103,13 @@ const Arts: NextPage = () => {
                             duration: 1,
                             delay: (index + 1) * 0.1
                         }}>
-                            <div className={styles.artContainer} style={{backgroundImage: "url('http://sociala.uitheme.net/assets/images/s-1.jpg')"}}>
+                            <div className={styles.artContainer} style={{backgroundImage: `url(${art.img})`}}>
                                 <div className={styles.artBody}>
                                     <figure className={styles.artImg}>
-                                        <img src="http://sociala.uitheme.net/assets/images/user-12.png" alt="avater"/>
+                                        <img src={art.avatar} alt="avater"/>
                                     </figure>
                                     <div className={styles.clearfix}></div>
-                                    <h4 className={styles.artTitle}>Aliqa Macale</h4>
+                                    <h4 className={styles.artTitle}>{art.name}</h4>
                                 </div>
                             </div>
                         </motion.div>

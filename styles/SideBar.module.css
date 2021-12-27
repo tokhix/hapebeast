@@ -40,6 +40,7 @@
     color: #212529 !important;
     margin-bottom: 0 !important;
     font-size: 12px !important;
+    margin-top: 0;
 }
 
 .cardTitle a {
@@ -121,14 +122,16 @@
     margin-bottom: 0.25rem !important;
     flex: 0 0 auto;
     width: 50%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 0.3rem !important;
 }
 
 .photo img {
-    border-radius: 0.3rem !important;
     width: 100% !important;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.3rem !important;
 }
 
 .moreBtn {

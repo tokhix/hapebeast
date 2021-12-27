@@ -37,12 +37,12 @@ const Header: NextPage = () => {
            <div className={styles.menuMobile} style={{opacity: 1, visibility: 'inherit'}}>
               <div className={styles.mobileNav}>
                  <ul className="menu">
-                    <li><a href='#'>Services</a></li>
-                    <li><a href='#'>Work</a></li>
-                    <li><a href="https://www.columnfivemedia.com/resources/">Resources</a></li>
-                    <li><a href="https://www.columnfivemedia.com/blog/">Blog</a></li>
-                    <li><a href="https://www.columnfivemedia.com/about/">About</a></li>
-                    <li><a href="https://www.columnfivemedia.com/contact/">Contact Us</a></li>
+                    <li><a href='#'>Jungle</a></li>
+                    <li><a href='#'>Community</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Dressup</a></li>
                  </ul>
               </div>
               <div className={styles.mobileSocial}>

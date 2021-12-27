@@ -199,7 +199,7 @@ I will continue to do whatever it takes to support our community and move it for
 
                <div className={styles.cardBodyP0}>
                   {/* <video autoPlay={false} loop={false} > */}
-                     <iframe className={styles.video} src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                     <iframe className={styles.video} src="https://www.youtube.com/embed/KV1otGdeuc4"></iframe>
                   {/* </video> */}
                 </div> 
 
