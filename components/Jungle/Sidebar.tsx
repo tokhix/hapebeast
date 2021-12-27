@@ -97,7 +97,7 @@ const Sidebar: NextPage = () => {
             </div>
         </div>
 
-        <div className={styles.card}>
+        {/* <div className={styles.card}>
             <div className={styles.cardTitle}>
                 <h4>Photos</h4>
                 <a href="/home">See all</a>
@@ -125,7 +125,7 @@ const Sidebar: NextPage = () => {
                 </div>
             </div>
             <div className={styles.moreBtn}><a href="/home"><i className="far fa-share-square"></i> More</a></div>
-        </div>
+        </div> */}
     </div>
   )
 }
