@@ -522,3 +522,7 @@
     left: 0;
     z-index: 1;
 }
+
+.sectinTitle {
+    font-family: Hape;
+}

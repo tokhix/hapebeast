@@ -230,7 +230,7 @@ I will continue to do whatever it takes to support our community and move it for
 
 
             <div className={styles.slickSlider} dir="ltr">
-               <h2>Hapes of the day</h2>
+               <h2 className={styles.sectinTitle}>Hapes of the day</h2>
                <div className={styles.slickList}>
                   <div className={styles.slickTrack} style={{width: 13230, opacity:1}}>
                      <div data-index="-7" tabIndex={-1}  className={styles.slickSlide} aria-hidden="true">
