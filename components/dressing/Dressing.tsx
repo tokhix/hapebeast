@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -46,17 +47,17 @@ const Dressing: NextPage = () => {
     })
     setAnimated(true)
   }
+  const imgUrl = `/imgs/hapes/${drip.hats}${drip.glasses}${drip.chains}${drip.clothes}.png`
 
-  const getImageUrl = () => {
-    return `/imgs/hapes/${drip.hats}${drip.glasses}${drip.chains}${drip.clothes}.png`
-  }
   return (
     <div className={styles.dressing}>
       <div className={styles.media}>
-      <div className={`${styles.image} ${animated ? styles.glitch : ''}`} style={{ 
-        backgroundImage: 'url(' + getImageUrl() + ')'
-      }}>
-        </div>
+      <motion.img key={imgUrl}
+            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.4 }}
+            className={`${styles.image} ${animated ? styles.glitch : ''}`} src={imgUrl}/>
         {/* <img className={animated ? styles.rollOut : ''} src={`/imgs/0${drip.hats}${drip.chains}.jpg`} /> */}
       </div>
       <div className={styles.options}>

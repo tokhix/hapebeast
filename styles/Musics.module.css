@@ -318,4 +318,7 @@
 .video{
     width: 100% !important;
     float: right !important;
+    height: 350px;
+    border: 0;
+    border-radius: 5px;
 }

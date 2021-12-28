@@ -526,3 +526,7 @@
 .sectinTitle {
     font-family: Hape;
 }
+
+.marginBottom {
+    margin-bottom: -20px !important;
+}

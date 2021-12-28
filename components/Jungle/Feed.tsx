@@ -113,7 +113,7 @@ const Feed: NextPage = () => {
                 delay: 1
             }}>
             <div className={styles.card}>
-               <div className={styles.cardBodyP0}>
+               <div className={`${styles.cardBodyP0} ${styles.marginBottom}`}>
                   <figure className={styles.postAvatar}><img src="/imgs/users/justcarl.webp" alt="avater"/></figure>
                   <h4 className={styles.postName}> JustCarl <span className="d-block font-xssss fw-500 mt-1 lh-3 text-grey-500"> 22 min ago</span></h4>
                   <div className={styles.pointer}>
@@ -149,7 +149,7 @@ TEAM HAPE <a href="/defaultvideo" className={styles.seeMore}>See more</a></p>
             </motion.div>
 
             <div className={styles.card}>
-               <div className={styles.cardBodyP0}>
+               <div className={`${styles.cardBodyP0} ${styles.marginBottom}`}>
                   <figure className={styles.postAvatar}><img src="/imgs/users/6.jpg" alt="avater"/></figure>
                   <h4 className={styles.postName}> Fanatic Hape <span className="d-block font-xssss fw-500 mt-1 lh-3 text-grey-500"> 1 hour ago</span></h4>
                   <div className={styles.pointer}>
@@ -180,7 +180,7 @@ TEAM HAPE <a href="/defaultvideo" className={styles.seeMore}>See more</a></p>
             </div>
 
             <div className={styles.card}>
-               <div className={styles.cardBodyP0}>
+               <div className={`${styles.cardBodyP0} ${styles.marginBottom}`}>
                   <figure className={styles.postAvatar}><img src="/imgs/users/9.jpg" alt="avater"/></figure>
                   <h4 className={styles.postName}> Ferit Kaptan <span className="d-block font-xssss fw-500 mt-1 lh-3 text-grey-500"> 2 hours ago</span></h4>
                   <div className={styles.pointer}>
@@ -219,15 +219,6 @@ I will continue to do whatever it takes to support our community and move it for
                     </div>
                </div>
             </div>
-
-
-
-
-
-
-
-
-
 
             <div className={styles.slickSlider} dir="ltr">
                <h2 className={styles.sectinTitle}>Hapes of the day</h2>
@@ -268,32 +259,6 @@ I will continue to do whatever it takes to support our community and move it for
                                  <h4>Mamiz Boy </h4>
                                  <p>Memer of the day</p>
                                  <span>Follow</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div data-index="-7" tabIndex={-1}  className={styles.slickSlide} aria-hidden="true">
-                        <div>
-                           <div className={styles.userCard} style={{width: 200}} tabIndex={-1}>
-                              <div className={styles.bgImage} style={{backgroundImage: "url('http://sociala.uitheme.net/assets/images/u-bg.jpg')"}}></div>
-                              <div className={styles.userInfo}>
-                                 <figure className={styles.userImg}><img src="/1.jpg" alt="avater"/></figure>
-                                 <h4>Aliqa Macale </h4>
-                                 <p>support@gmail.com</p>
-                                 <span>LIVE</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div data-index="-7" tabIndex={-1}  className={styles.slickSlide} aria-hidden="true">
-                        <div>
-                           <div className={styles.userCard} style={{width: 200}} tabIndex={-1}>
-                              <div className={styles.bgImage} style={{backgroundImage: "url('http://sociala.uitheme.net/assets/images/u-bg.jpg')"}}></div>
-                              <div className={styles.userInfo}>
-                                 <figure className={styles.userImg}><img src="/1.jpg" alt="avater"/></figure>
-                                 <h4>Aliqa Macale </h4>
-                                 <p>support@gmail.com</p>
-                                 <span>LIVE</span>
                               </div>
                            </div>
                         </div>
