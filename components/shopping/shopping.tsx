@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import type { NextPage } from 'next'
 import Link from 'next/link'
 import styles from '../../styles/Shopping.module.css'
+import Image from 'next/image'
 
 const Shopping: NextPage = () => {
    const products = [
@@ -65,7 +66,7 @@ const Shopping: NextPage = () => {
                                                 <a href="/shop" className={styles.shopNow}>Shop Now</a>
                                              </div>
                                           </div>
-                                          <div className={styles.shopImg}><img src="/imgs/users/product0.png" alt="product"/></div>
+                                          <div className={styles.shopImg}><Image src="/imgs/users/product0.png" alt="product"/></div>
                                        </div>
                                     </div>
                                  </div>
@@ -87,7 +88,7 @@ const Shopping: NextPage = () => {
                   <div className={styles.productCard}>
                      <div className={styles.productImg}>
                          <Link href="/product">
-                             <img src={product.img} alt="product"/>
+                             <Image src={product.img} alt="product"/>
                         </Link>
                     </div>
                      <div className={styles.productBody}>

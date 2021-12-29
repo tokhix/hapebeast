@@ -58,7 +58,6 @@ const Dressing: NextPage = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4 }}
             className={`${styles.image} ${animated ? styles.glitch : ''}`} src={imgUrl}/>
-        {/* <img className={animated ? styles.rollOut : ''} src={`/imgs/0${drip.hats}${drip.chains}.jpg`} /> */}
       </div>
       <div className={styles.options}>
         <h1>STYLE YOUR HAPE</h1>
@@ -68,7 +67,7 @@ const Dressing: NextPage = () => {
           <ul className={styles.list}>
           {hats.map((hat, index) => { return (
             <li className={drip.hats == index + 1 ? styles.active: ''} onClick={() => changeHat('hats', index) } key={index}>
-              <img src={hat.img} alt=""/>
+              <Image src={hat.img} priority alt=""/>
             </li>
           )})}
           </ul>
@@ -79,7 +78,7 @@ const Dressing: NextPage = () => {
           <ul className={styles.list}>
           {glasses.map((glass, index) => { return (
             <li className={drip.glasses == index + 1 ? styles.active: ''} onClick={() => changeHat('glasses', index) } key={index}>
-              <img src={glass.img} alt=""/>
+              <Image src={glass.img} alt=""/>
             </li>
           )})}
           </ul>
@@ -90,7 +89,7 @@ const Dressing: NextPage = () => {
           <ul className={styles.list}>
           {chains.map((chain, index) => { return (
             <li className={drip.chains == index + 1 ? styles.active: ''} onClick={() => changeHat('chains', index) } key={index}>
-              <img src={chain.img} alt=""/>
+              <Image src={chain.img} alt=""/>
             </li>
           )})}
           </ul>
@@ -101,7 +100,7 @@ const Dressing: NextPage = () => {
           <ul className={styles.list}>
           {clothes.map((clothe, index) => { return (
             <li className={drip.clothes == index + 1 ? styles.active: ''} onClick={() => changeHat('clothes', index) } key={index}>
-              <img src={clothe.img} alt=""/>
+              <Image src={clothe.img} alt=""/>
             </li>
           )})}
           </ul>

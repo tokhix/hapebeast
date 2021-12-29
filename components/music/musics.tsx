@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import { useState } from 'react'
 import styles from '../../styles/Musics.module.css'
 import Loading from '../Jungle/Loading'
+import Image from 'next/image'
 
 const Music: NextPage = () => {
    const musics = [
@@ -78,7 +79,7 @@ const Music: NextPage = () => {
              delay: 0.5
          }}>
                <div className={styles.cardBodyP0}>
-                  <figure className={styles.postAvatar}><img src={music.avatar} alt="avater"/></figure>
+                  <figure className={styles.postAvatar}><Image src={music.avatar} alt="avater"/></figure>
                   <h4 className={styles.postName}> {music.name} <span className="d-block font-xssss fw-500 mt-1 lh-3 text-grey-500"> {music.time}</span></h4>
                   <div className={styles.pointer}>
                     <i className="fas fa-ellipsis-h"></i>
