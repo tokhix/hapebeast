@@ -55,11 +55,11 @@ const Music: NextPage = () => {
          style: 'house'
       }
    ]
-   const [postLiked, setPostLiked] = useState([false, false, false, false, false, false])
+   const [postLiked, setPostLiked] = useState([0, 0, 0, 0, 0, 0])
 
    const likePost = (index: number) => {
       const newLikes = [...postLiked]
-      newLikes[index] = !newLikes[index]
+      newLikes[index] == 0 ? newLikes[index] = 1 : newLikes[index] = 0
       setPostLiked(newLikes)
    }
   return (
@@ -94,7 +94,7 @@ const Music: NextPage = () => {
                </div>
                <div className={`${styles.cardBodyP0} ${styles.marginTop}`}>
                     <div className={styles.emojis}>
-                    <motion.span onClick={() => likePost(index)} className={`${styles.hEmoji} ${postLiked[index] ? styles.selected : ''}`}
+                    <motion.span onClick={() => likePost(index)} className={`${styles.hEmoji} ${postLiked[index] == 1 ? styles.selected : ''}`}
                      key={postLiked[index]} initial={{ scale: 1 }} animate={{ scale: [1, 5, 1] }}
                      transition={{
                         type: "ease",

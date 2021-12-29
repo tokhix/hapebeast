@@ -31,11 +31,11 @@ const Feed: NextPage = () => {
          avatar: '/imgs/users/4.jpg'
       },
     ]
-   const [postLiked, setPostLiked] = useState([false, false, false])
+   const [postLiked, setPostLiked] = useState([0, 0, 0])
 
    const likePost = (index: number) => {
       const newLikes = [...postLiked]
-      newLikes[index] = !newLikes[index]
+      newLikes[index] == 0 ? newLikes[index] = 1 : newLikes[index] = 0
       setPostLiked(newLikes)
    }
   return (
@@ -129,17 +129,14 @@ const Feed: NextPage = () => {
                </div>
                <div className={styles.cardBodyP0}>
                   <p className={styles.postText}>Hi HAPES<br/>
-
-250k…What a journey it’s been so far. <br/>
-Tomorrow evening European time the announcement you’ve all been waiting for…until then. <br/>
-
-Go HAPESHIT and Stay HAPE<br/>
-
-TEAM HAPE <a href="/defaultvideo" className={styles.seeMore}>See more</a></p>
+                  250k…What a journey it’s been so far. <br/>
+                  Tomorrow evening European time the announcement you’ve all been waiting for…until then. <br/>
+                  Go HAPESHIT and Stay HAPE<br/>
+                  TEAM HAPE <a href="/defaultvideo" className={styles.seeMore}>See more</a></p>
                </div>
                <div className={`${styles.cardBodyP0} ${styles.marginTop}`}>
                     <div className={styles.emojis}>
-                    <motion.span onClick={() => likePost(0)} className={`${styles.hEmoji} ${postLiked[0] ? styles.selected : ''}`}
+                    <motion.span onClick={() => likePost(0)} className={`${styles.hEmoji} ${postLiked[0] == 1 ? styles.selected : ''}`}
                      key={postLiked[0]} initial={{ scale: 1 }} animate={{ scale: [1, 5, 1] }}
                      transition={{
                         type: "ease",
@@ -176,7 +173,7 @@ TEAM HAPE <a href="/defaultvideo" className={styles.seeMore}>See more</a></p>
                </div>
                <div className={`${styles.cardBodyP0} ${styles.marginTop}`}>
                     <div className={styles.emojis}>
-                    <motion.span onClick={() => likePost(1)} className={`${styles.hEmoji} ${postLiked[1] ? styles.selected : ''}`}
+                    <motion.span onClick={() => likePost(1)} className={`${styles.hEmoji} ${postLiked[1] == 1 ? styles.selected : ''}`}
                      key={postLiked[1]} initial={{ scale: 1 }} animate={{ scale: [1, 5, 1] }}
                      transition={{
                         type: "ease",
@@ -220,7 +217,7 @@ I will continue to do whatever it takes to support our community and move it for
 
                <div className={`${styles.cardBodyP0} ${styles.marginTop}`}>
                     <div className={styles.emojis}>
-                    <motion.span onClick={() => likePost(2)} className={`${styles.hEmoji} ${postLiked[2] ? styles.selected : ''}`}
+                    <motion.span onClick={() => likePost(2)} className={`${styles.hEmoji} ${postLiked[2] == 1 ? styles.selected : ''}`}
                      key={postLiked[2]} initial={{ scale: 1 }} animate={{ scale: [1, 5, 1] }}
                      transition={{
                         type: "ease",
