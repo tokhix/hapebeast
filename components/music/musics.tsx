@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import type { NextPage } from 'next'
+import { useState } from 'react'
 import styles from '../../styles/Musics.module.css'
 import Loading from '../Jungle/Loading'
 
@@ -15,7 +16,7 @@ const Music: NextPage = () => {
       },
       {
          name: 'TLG',
-         avatar: '/imgs/users/1.jpg',
+         avatar: '/imgs/users/4.jpg',
          youtubeId: 'hKedWnK4NrM',
          description: 'Wasgud Hapes! I\'m so excited to be part of the community as a recording artist. Check out my new music video "Red Light Green Light"',
          time: '22 min ago',
@@ -23,7 +24,7 @@ const Music: NextPage = () => {
       },
       {
          name: 'SUBRIF',
-         avatar: '/imgs/users/1.jpg',
+         avatar: '/imgs/users/2.jpg',
          youtubeId: 'DipTYNQAVCQ',
          description: 'Ayyyy y’all are too kind. But I took the HAPEBEAST promo video, and redid it - lmk if you like it I made the beat, and edited the video ☺️',
          time: '22 min ago',
@@ -31,7 +32,7 @@ const Music: NextPage = () => {
       },
       {
          name: 'P.L.S.',
-         avatar: '/imgs/users/1.jpg',
+         avatar: '/imgs/users/5.jpg',
          youtubeId: 'IqnlGElut6E',
          description: 'THE ONLY HAPE BEAST IS THE LOYAL HAPE BEAST!',
          time: '22 min ago',
@@ -39,7 +40,7 @@ const Music: NextPage = () => {
       },
       {
          name: 'papajams',
-         avatar: '/imgs/users/1.jpg',
+         avatar: '/imgs/users/10.jpg',
          youtubeId: 'P56HP7EoSSI',
          description: 'Ssending love team! The best is yet to come',
          time: '22 min ago',
@@ -47,13 +48,20 @@ const Music: NextPage = () => {
       },
       {
          name: 'Sid-Art ',
-         avatar: '/imgs/users/1.jpg',
+         avatar: '/imgs/users/6.jpg',
          youtubeId: 'nApK_HWz3i4',
          description: 'Sharing again my fan music of Hape Beast called \'We Hape\'! Hope you all like it! 🙂 We Hape! And We Coming For you! ',
          time: '22 min ago',
          style: 'house'
       }
    ]
+   const [postLiked, setPostLiked] = useState([false, false, false, false, false, false])
+
+   const likePost = (index: number) => {
+      const newLikes = [...postLiked]
+      newLikes[index] = !newLikes[index]
+      setPostLiked(newLikes)
+   }
   return (
 
 <div className={styles.middleSidebarBottom}>
@@ -86,7 +94,12 @@ const Music: NextPage = () => {
                </div>
                <div className={`${styles.cardBodyP0} ${styles.marginTop}`}>
                     <div className={styles.emojis}>
-                    <img src="/icon.jpg" alt="" />
+                    <motion.span onClick={() => likePost(index)} className={`${styles.hEmoji} ${postLiked[index] ? styles.selected : ''}`}
+                     key={postLiked[index]} initial={{ scale: 1 }} animate={{ scale: [1, 5, 1] }}
+                     transition={{
+                        type: "ease",
+                        duration: 0.2,
+                     }}>H</motion.span>
                     <span className={styles.emojiText}>2.8K Haped</span>
                  </div>
                   <a href="/#" className={styles.emojis}>

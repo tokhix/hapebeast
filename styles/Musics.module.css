@@ -322,3 +322,21 @@
     border: 0;
     border-radius: 5px;
 }
+
+.hEmoji {
+    font-family: Hape !important;
+    font-size: 13px !important;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    transition: all 0.3s ease-in-out;
+}
+.hEmoji:hover {
+    box-shadow: 0 8px 30px rgb(0 0 0 / 10%);
+}
+.selected {
+    background-color: #000;
+    color: #fff;
+}

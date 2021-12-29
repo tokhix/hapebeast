@@ -53,6 +53,10 @@
     margin-right: calc(var(--bs-gutter-x) / -2);
     margin-left: calc(var(--bs-gutter-x) / -2);
 }
+@media (max-width: 930px){
+.feedBody {
+    --bs-gutter-x: 0;
+}}
 .feedBody > * {
     flex-shrink: 0;
     width: 100%;
@@ -312,18 +316,22 @@
     position: relative;
     display: block;
     box-sizing: border-box;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
+    overflow: auto;
+    white-space: nowrap;  
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-
+.slickSlider::-webkit-scrollbar {
+    display: none;
+  }
+  
 .slickList {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
     overflow: hidden;
     margin: 0;
     padding: 0;
     position: relative;
-    display: block;
+    display: inline-block;
 }
 
 .slickTrack {
@@ -529,4 +537,23 @@
 
 .marginBottom {
     margin-bottom: -20px !important;
+}
+
+
+.hEmoji {
+    font-family: Hape !important;
+    font-size: 13px !important;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    transition: all 0.3s ease-in-out;
+}
+.hEmoji:hover {
+    box-shadow: 0 8px 30px rgb(0 0 0 / 10%);
+}
+.selected {
+    background-color: #000;
+    color: #fff;
 }

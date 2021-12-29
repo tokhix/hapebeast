@@ -52,8 +52,8 @@ const Shopping: NextPage = () => {
                     }}>
                      <div className={styles.slickSlider} dir="ltr">
                         <div className={styles.slickList}>
-                           <div className={styles.slickTrack} style={{width: 1920, opacity: 1}}>
-                              <div data-index="0" className={styles.slickSlide} aria-hidden="false" style={{outline: 'none', width: 960}}>
+                           <div className={styles.slickTrack}>
+                              <div data-index="0" className={styles.slickSlide} aria-hidden="false">
                                  <div>
                                     <div className={styles.slickStyle}>
                                        <div className={styles.row}>

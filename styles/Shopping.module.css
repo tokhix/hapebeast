@@ -3,6 +3,10 @@
     padding: 20px 0px 10px 0px;
     margin-top: 65px;
 }
+@media (max-width: 930px){
+.middleSidebarBottom {
+    margin-top: 45px;
+}}
 @media (min-width: 1200px){
 .middleSidebarBottom {
     display: -webkit-box;
@@ -48,6 +52,10 @@
     margin-right: calc(var(--bs-gutter-x) / -2);
     margin-left: calc(var(--bs-gutter-x) / -2);
 }
+@media (max-width: 930px){
+.row {
+    --bs-gutter-x: 0;
+}}
 .row > * {
     flex-shrink: 0;
     width: 100%;

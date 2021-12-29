@@ -31,6 +31,13 @@ const Feed: NextPage = () => {
          avatar: '/imgs/users/4.jpg'
       },
     ]
+   const [postLiked, setPostLiked] = useState([false, false, false])
+
+   const likePost = (index: number) => {
+      const newLikes = [...postLiked]
+      newLikes[index] = !newLikes[index]
+      setPostLiked(newLikes)
+   }
   return (
 <div className={styles.middleSidebarBottom}>
    <div className={styles.middleSidebarLeft}>
@@ -39,7 +46,7 @@ const Feed: NextPage = () => {
 
                <div className={styles.slickSlider} dir="ltr">
                   <div className={styles.slickList}>
-                     <div className={styles.slickTrack} style={{width: 5040, opacity:1}}>
+                     <div className={styles.slickTrack} style={{width: 705, opacity:1}}>
                      <motion.div className={styles.story} initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{
@@ -132,7 +139,12 @@ TEAM HAPE <a href="/defaultvideo" className={styles.seeMore}>See more</a></p>
                </div>
                <div className={`${styles.cardBodyP0} ${styles.marginTop}`}>
                     <div className={styles.emojis}>
-                    <img src="/icon.jpg" alt="" />
+                    <motion.span onClick={() => likePost(0)} className={`${styles.hEmoji} ${postLiked[0] ? styles.selected : ''}`}
+                     key={postLiked[0]} initial={{ scale: 1 }} animate={{ scale: [1, 5, 1] }}
+                     transition={{
+                        type: "ease",
+                        duration: 0.2,
+                     }}>H</motion.span>
                     <span className={styles.emojiText}>2.8K Haped</span>
                  </div>
                   <a href="/#" className={styles.emojis}>
@@ -164,7 +176,12 @@ TEAM HAPE <a href="/defaultvideo" className={styles.seeMore}>See more</a></p>
                </div>
                <div className={`${styles.cardBodyP0} ${styles.marginTop}`}>
                     <div className={styles.emojis}>
-                    <img src="/icon.jpg" alt="" />
+                    <motion.span onClick={() => likePost(1)} className={`${styles.hEmoji} ${postLiked[1] ? styles.selected : ''}`}
+                     key={postLiked[1]} initial={{ scale: 1 }} animate={{ scale: [1, 5, 1] }}
+                     transition={{
+                        type: "ease",
+                        duration: 0.2,
+                     }}>H</motion.span>
                     <span className={styles.emojiText}>2.8K Haped</span>
                  </div>
                   <a href="/#" className={styles.emojis}>
@@ -198,14 +215,17 @@ I will continue to do whatever it takes to support our community and move it for
                </div>
 
                <div className={styles.cardBodyP0}>
-                  {/* <video autoPlay={false} loop={false} > */}
                      <iframe className={styles.video} src="https://www.youtube.com/embed/KV1otGdeuc4"></iframe>
-                  {/* </video> */}
                 </div> 
 
                <div className={`${styles.cardBodyP0} ${styles.marginTop}`}>
                     <div className={styles.emojis}>
-                    <img src="/icon.jpg" alt="" />
+                    <motion.span onClick={() => likePost(2)} className={`${styles.hEmoji} ${postLiked[2] ? styles.selected : ''}`}
+                     key={postLiked[2]} initial={{ scale: 1 }} animate={{ scale: [1, 5, 1] }}
+                     transition={{
+                        type: "ease",
+                        duration: 0.2,
+                     }}>H</motion.span>
                     <span className={styles.emojiText}>2.8K Haped</span>
                  </div>
                   <a href="/#" className={styles.emojis}>
@@ -270,8 +290,8 @@ I will continue to do whatever it takes to support our community and move it for
 
             <Loading />
          </div>
-
          <Sidebar />
+
 
       </div>
    </div>

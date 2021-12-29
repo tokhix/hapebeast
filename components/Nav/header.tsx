@@ -37,12 +37,12 @@ const Header: NextPage = () => {
            <div className={styles.menuMobile} style={{opacity: 1, visibility: 'inherit'}}>
               <div className={styles.mobileNav}>
                  <ul className="menu">
-                    <li><a href='#'>Jungle</a></li>
-                    <li><a href='#'>Community</a></li>
-                    <li><a href="#">Art</a></li>
-                    <li><a href="#">Music</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Dressup</a></li>
+                    <li><Link href="/">Jungle</Link></li>
+                    <li><Link href="/community">Community</Link></li>
+                    <li><Link href="/art">Art</Link></li>
+                    <li><Link href="/music">Music</Link></li>
+                    <li><Link href="/shop">Shop</Link></li>
+                    <li><Link href="/dressup">Dressup</Link></li>
                  </ul>
               </div>
               <div className={styles.mobileSocial}>
@@ -68,12 +68,12 @@ const Header: NextPage = () => {
            <div className={styles.menuDesktop}>
               <nav className={styles.desktopNav}>
                  <ul className="menu">
-                    <li><Link href="/">Jungle</Link></li>
-                    <li><Link href="/community">Community</Link></li>
-                    <li><Link href="/art">Art</Link></li>
-                    <li><Link href="/music">Music</Link></li>
-                    <li><Link href="/shop">Shop</Link></li>
-                    <li className={styles.userImg}><Link href="/dressup"><img src='/imgs/users/0.jpg' /></Link></li>
+                    <li className={window.location.pathname == '/'? styles.active : ''}><Link href="/">Jungle</Link></li>
+                    <li className={window.location.pathname == '/community'? styles.active : ''}><Link href="/community">Community</Link></li>
+                    <li className={window.location.pathname == '/art'? styles.active : ''}><Link href="/art">Art</Link></li>
+                    <li className={window.location.pathname == '/music'? styles.active : ''}><Link href="/music">Music</Link></li>
+                    <li className={window.location.pathname == '/shop'? styles.active : ''}><Link href="/shop">Shop</Link></li>
+                    <li className={`${styles.userImg} ${window.location.pathname == '/dressup'? styles.imgActive : ''}`}><Link href="/dressup"><img src='/imgs/users/0.jpg' /></Link></li>
                  </ul>
               </nav>
            </div>
