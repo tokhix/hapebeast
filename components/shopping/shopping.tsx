@@ -2,38 +2,37 @@ import { motion } from 'framer-motion'
 import type { NextPage } from 'next'
 import Link from 'next/link'
 import styles from '../../styles/Shopping.module.css'
-import Image from 'next/image'
 
 const Shopping: NextPage = () => {
    const products = [
       {
          name: 'Adidas x Hape Shoe',
-         img: '/imgs/users/product1.png',
+         img: '/imgs/users/product1.webp',
          price: '340',
       },
       {
          name: 'Lacost Jacket Black',
-         img: '/imgs/users/product2.png',
+         img: '/imgs/users/product2.webp',
          price: '220',
       },
       {
          name: 'Ralph Lauren x Hape Cap',
-         img: '/imgs/users/product3.png',
+         img: '/imgs/users/product3.webp',
          price: '90',
       },
       {
          name: 'Nike x Hape Hoodie',
-         img: '/imgs/users/product4.png',
+         img: '/imgs/users/product4.webp',
          price: '140',
       },
       {
          name: 'Ralph Lauren x Hape ',
-         img: '/imgs/users/product5.png',
+         img: '/imgs/users/product5.webp',
          price: '100',
       },
       {
          name: 'North Face x Hape Jacket',
-         img: '/imgs/users/product6.png',
+         img: '/imgs/users/product6.webp',
          price: '320',
       },
     ]
@@ -66,7 +65,7 @@ const Shopping: NextPage = () => {
                                                 <a href="/shop" className={styles.shopNow}>Shop Now</a>
                                              </div>
                                           </div>
-                                          <div className={styles.shopImg}><Image src="/imgs/users/product0.png" alt="product"/></div>
+                                          <div className={styles.shopImg}><img src="/imgs/users/product0.webp" alt="product"/></div>
                                        </div>
                                     </div>
                                  </div>
@@ -88,7 +87,7 @@ const Shopping: NextPage = () => {
                   <div className={styles.productCard}>
                      <div className={styles.productImg}>
                          <Link href="/product">
-                             <Image src={product.img} alt="product"/>
+                             <img src={product.img} alt="product"/>
                         </Link>
                     </div>
                      <div className={styles.productBody}>

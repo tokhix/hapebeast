@@ -7,39 +7,39 @@ const Communities: NextPage = () => {
     const communities = [
         {
            name: 'Arabic Community',
-           img: '/imgs/users/0.jpg',
+           img: '/imgs/users/0.webp',
            description: 'Arab Hapes are here',
-           header: '/imgs/users/arab.jpg'
+           header: '/imgs/users/arab.webp'
         },
         {
            name: 'French Community',
-           img: '/imgs/users/12.jpg',
+           img: '/imgs/users/12.webp',
            description: 'French baguette, Bonjour!',
-           header: '/imgs/users/france.jpg'
+           header: '/imgs/users/france.webp'
         },
         {
            name: 'Mental Health',
-           img: '/imgs/users/13.jpg',
+           img: '/imgs/users/13.webp',
            description: 'We care about you mental health',
-           header: '/imgs/users/mentalhealth.jpg'
+           header: '/imgs/users/mentalhealth.webp'
         },
         {
            name: 'Italian Community',
-           img: '/imgs/users/16.jpg',
+           img: '/imgs/users/16.webp',
            description: 'Ciao Bella, Ciao Ciao Ciao',
-           header: '/imgs/users/italy.jpg'
+           header: '/imgs/users/italy.webp'
         },
         {
            name: 'Philippines Community',
-           img: '/imgs/users/15.jpg',
+           img: '/imgs/users/15.webp',
            description: 'We live in paradise :)',
-           header: '/imgs/users/philippines.jpg'
+           header: '/imgs/users/philippines.webp'
         },
         {
             name: 'Sports',
-            img: '/imgs/users/14.jpg',
+            img: '/imgs/users/14.webp',
             description: 'Everything sports related here!',
-            header: '/imgs/users/sports.jpg'
+            header: '/imgs/users/sports.webp'
         },
       ]
   return (

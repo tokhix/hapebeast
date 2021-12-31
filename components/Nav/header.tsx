@@ -19,7 +19,7 @@ const Header: NextPage = () => {
      <div className={styles.navbarContainer}>
         <div className={styles.navbarLogo}>
            <a href="#">
-              <Image src="logo.png"/>
+              <img src="logo.webp"/>
            </a>
         </div>
         <div className={styles.mobileBtn}>
@@ -73,7 +73,7 @@ const Header: NextPage = () => {
                     <li className={window.location.pathname == '/art'? styles.active : ''}><Link href="/art">Art</Link></li>
                     <li className={window.location.pathname == '/music'? styles.active : ''}><Link href="/music">Music</Link></li>
                     <li className={window.location.pathname == '/shop'? styles.active : ''}><Link href="/shop">Shop</Link></li>
-                    <li className={`${styles.userImg} ${window.location.pathname == '/dressup'? styles.imgActive : ''}`}><Link href="/dressup"><Image src='/imgs/users/0.jpg' /></Link></li>
+                    <li className={`${styles.userImg} ${window.location.pathname == '/dressup'? styles.imgActive : ''}`}><Link href="/dressup"><img src='/imgs/users/0.webp' /></Link></li>
                  </ul>
               </nav>
            </div>

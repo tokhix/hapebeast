@@ -12,23 +12,23 @@ const Feed: NextPage = () => {
    const stories = [
       {
          name: 'Aliqa Macale',
-         img: '/imgs/posts/story1.jpg',
-         avatar: '/imgs/users/1.jpg'
+         img: '/imgs/posts/story1.webp',
+         avatar: '/imgs/users/1.webp'
       },
       {
          name: 'Aliqa Macale',
-         img: '/imgs/posts/story2.jpg',
-         avatar: '/imgs/users/2.jpg'
+         img: '/imgs/posts/story2.webp',
+         avatar: '/imgs/users/2.webp'
       },
       {
          name: 'Aliqa Macale',
-         img: '/imgs/posts/story3.jpg',
-         avatar: '/imgs/users/3.jpg'
+         img: '/imgs/posts/story3.webp',
+         avatar: '/imgs/users/3.webp'
       },
       {
          name: 'Aliqa Macale',
-         img: '/imgs/posts/story4.jpg',
-         avatar: '/imgs/users/4.jpg'
+         img: '/imgs/posts/story4.webp',
+         avatar: '/imgs/users/4.webp'
       },
     ]
    const [postLiked, setPostLiked] = useState([0, 0, 0])
@@ -77,7 +77,7 @@ const Feed: NextPage = () => {
                               <div tabIndex={-1} >
                                  <div className={styles.storyCard}  style={{backgroundImage: `url('${story.img}')`}}>
                                     <div className={`${styles.storyBody} ${styles.overlay}`}>
-                                       <figure className={styles.storyImg}><Image src={story.avatar} alt="avater"/></figure>
+                                       <figure className={styles.storyImg}><img src={story.avatar} alt="avater"/></figure>
                                        <h4>{story.name}  </h4>
                                     </div>
                                  </div>
@@ -102,7 +102,7 @@ const Feed: NextPage = () => {
                    <a href="/" className={styles.cardBodyContent}><span className="lnr lnr-pencil"></span>Create Post</a>
                 </div>
                <div className={`${styles.cardBodyP0} ${styles.marginTop}`}>
-                  <figure className={styles.cardAvatar}><Image src="/imgs/users/0.jpg" alt="icon"/></figure>
+                  <figure className={styles.cardAvatar}><img src="/imgs/users/0.webp" alt="icon"/></figure>
                   <textarea name="message" className={styles.textarea} cols={30} rows={10} placeholder="What's on your mind?" spellCheck="false"></textarea>
                </div>
                <div className={`${styles.cardBodyP0} ${styles.marginTop}`}>
@@ -121,7 +121,7 @@ const Feed: NextPage = () => {
             }}>
             <div className={styles.card}>
                <div className={`${styles.cardBodyP0} ${styles.marginBottom}`}>
-                  <figure className={styles.postAvatar}><Image src="/imgs/users/justcarl.webp" alt="avater"/></figure>
+                  <figure className={styles.postAvatar}><img src="/imgs/users/justcarl.webp" alt="avater"/></figure>
                   <h4 className={styles.postName}> JustCarl <span className="d-block font-xssss fw-500 mt-1 lh-3 text-grey-500"> 22 min ago</span></h4>
                   <div className={styles.pointer}>
                     <i className="fas fa-ellipsis-h"></i>
@@ -136,7 +136,7 @@ const Feed: NextPage = () => {
                </div>
                <div className={`${styles.cardBodyP0} ${styles.marginTop}`}>
                     <div className={styles.emojis}>
-                    <motion.span onClick={() => likePost(0)} className={`${styles.hEmoji} ${postLiked[0] == 1 ? styles.selected : ''}`}
+                    <motion.span onClick={() => likePost(0)} className={`${styles.hEmoji} ${postLiked[0] ? styles.selected : ''}`}
                      key={postLiked[0]} initial={{ scale: 1 }} animate={{ scale: [1, 5, 1] }}
                      transition={{
                         type: "ease",
@@ -159,7 +159,7 @@ const Feed: NextPage = () => {
 
             <div className={styles.card}>
                <div className={`${styles.cardBodyP0} ${styles.marginBottom}`}>
-                  <figure className={styles.postAvatar}><Image src="/imgs/users/6.jpg" alt="avater"/></figure>
+                  <figure className={styles.postAvatar}><img src="/imgs/users/6.webp" alt="avater"/></figure>
                   <h4 className={styles.postName}> Fanatic Hape <span className="d-block font-xssss fw-500 mt-1 lh-3 text-grey-500"> 1 hour ago</span></h4>
                   <div className={styles.pointer}>
                     <i className="fas fa-ellipsis-h"></i>
@@ -169,11 +169,11 @@ const Feed: NextPage = () => {
                   <p className={styles.postText}>This is my new HapeBeast decoration for christmas, Hape is part of our family now!  <a href="/defaultvideo" className={styles.seeMore}>#xmas-event</a></p>
                </div>
                <div className={styles.cardBodyP0}>
-                    <div className={styles.postImg}><Image src="/imgs/posts/christman.JPG" className="rounded-3 w-100" alt="post" /></div>
+                    <div className={styles.postImg}><img src="/imgs/posts/christman.JPG" className="rounded-3 w-100" alt="post" /></div>
                </div>
                <div className={`${styles.cardBodyP0} ${styles.marginTop}`}>
                     <div className={styles.emojis}>
-                    <motion.span onClick={() => likePost(1)} className={`${styles.hEmoji} ${postLiked[1] == 1 ? styles.selected : ''}`}
+                    <motion.span onClick={() => likePost(1)} className={`${styles.hEmoji} ${postLiked[1] ? styles.selected : ''}`}
                      key={postLiked[1]} initial={{ scale: 1 }} animate={{ scale: [1, 5, 1] }}
                      transition={{
                         type: "ease",
@@ -195,7 +195,7 @@ const Feed: NextPage = () => {
 
             <div className={styles.card}>
                <div className={`${styles.cardBodyP0} ${styles.marginBottom}`}>
-                  <figure className={styles.postAvatar}><Image src="/imgs/users/9.jpg" alt="avater"/></figure>
+                  <figure className={styles.postAvatar}><img src="/imgs/users/9.webp" alt="avater"/></figure>
                   <h4 className={styles.postName}> Ferit Kaptan <span className="d-block font-xssss fw-500 mt-1 lh-3 text-grey-500"> 2 hours ago</span></h4>
                   <div className={styles.pointer}>
                     <i className="fas fa-ellipsis-h"></i>
@@ -217,7 +217,7 @@ I will continue to do whatever it takes to support our community and move it for
 
                <div className={`${styles.cardBodyP0} ${styles.marginTop}`}>
                     <div className={styles.emojis}>
-                    <motion.span onClick={() => likePost(2)} className={`${styles.hEmoji} ${postLiked[2] == 1 ? styles.selected : ''}`}
+                    <motion.span onClick={() => likePost(2)} className={`${styles.hEmoji} ${postLiked[2] ? styles.selected : ''}`}
                      key={postLiked[2]} initial={{ scale: 1 }} animate={{ scale: [1, 5, 1] }}
                      transition={{
                         type: "ease",
@@ -244,9 +244,9 @@ I will continue to do whatever it takes to support our community and move it for
                      <div data-index="-7" tabIndex={-1}  className={styles.slickSlide} aria-hidden="true">
                         <div>
                            <div className={styles.userCard} style={{width: 200}} tabIndex={-1}>
-                              <div className={styles.bgImage} style={{backgroundImage: "url('http://sociala.uitheme.net/assets/images/u-bg.jpg')"}}></div>
+                              <div className={styles.bgImage} style={{backgroundImage: "url('http://sociala.uitheme.net/assets/images/u-bg.webp')"}}></div>
                               <div className={styles.userInfo}>
-                                 <figure className={styles.userImg}><Image src="/imgs/users/10.jpg" alt="avater"/></figure>
+                                 <figure className={styles.userImg}><img src="/imgs/users/10.webp" alt="avater"/></figure>
                                  <h4>Pic Asso</h4>
                                  <p>Artist of the day</p>
                                  <span>Follow</span>
@@ -257,9 +257,9 @@ I will continue to do whatever it takes to support our community and move it for
                      <div data-index="-7" tabIndex={-1}  className={styles.slickSlide} aria-hidden="true">
                         <div>
                            <div className={styles.userCard} style={{width: 200}} tabIndex={-1}>
-                              <div className={styles.bgImage} style={{backgroundImage: "url('http://sociala.uitheme.net/assets/images/u-bg.jpg')"}}></div>
+                              <div className={styles.bgImage} style={{backgroundImage: "url('http://sociala.uitheme.net/assets/images/u-bg.webp')"}}></div>
                               <div className={styles.userInfo}>
-                                 <figure className={styles.userImg}><Image src="/imgs/users/9.jpg" alt="avater"/></figure>
+                                 <figure className={styles.userImg}><img src="/imgs/users/9.webp" alt="avater"/></figure>
                                  <h4>Beat Hoven </h4>
                                  <p>Musician of the day</p>
                                  <span>Follow</span>
@@ -270,9 +270,9 @@ I will continue to do whatever it takes to support our community and move it for
                      <div data-index="-7" tabIndex={-1}  className={styles.slickSlide} aria-hidden="true">
                         <div>
                            <div className={styles.userCard} style={{width: 200}} tabIndex={-1}>
-                              <div className={styles.bgImage} style={{backgroundImage: "url('http://sociala.uitheme.net/assets/images/u-bg.jpg')"}}></div>
+                              <div className={styles.bgImage} style={{backgroundImage: "url('http://sociala.uitheme.net/assets/images/u-bg.webp')"}}></div>
                               <div className={styles.userInfo}>
-                                 <figure className={styles.userImg}><Image src="/imgs/users/7.jpg" alt="avater"/></figure>
+                                 <figure className={styles.userImg}><img src="/imgs/users/7.webp" alt="avater"/></figure>
                                  <h4>Mamiz Boy </h4>
                                  <p>Memer of the day</p>
                                  <span>Follow</span>

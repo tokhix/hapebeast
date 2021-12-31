@@ -9,10 +9,10 @@ const SingleProduct: NextPage = () => {
    <div className={styles.middleSidebarLeft}>
       <div className={styles.row}>
          <div className={styles.productLeft}>
-             <img src="http://sociala.uitheme.net/assets/images/pl6.png" alt="product"/>
-             <img src="http://sociala.uitheme.net/assets/images/pl7.png" alt="product"/>
-             <img src="http://sociala.uitheme.net/assets/images/pl8.png" alt="product"/>
-             <img src="http://sociala.uitheme.net/assets/images/pl9.png" alt="product"/>
+             <img src="/imgs/posts/product1.webp" alt="product"/>
+             <img src="/imgs/posts/product2.webp" alt="product"/>
+             <img src="/imgs/posts/product3.webp" alt="product"/>
+             <img src="/imgs/posts/product4.webp" alt="product"/>
         </div>
          <div className={styles.productMiddle}>
             <div className={styles.slickSlider} dir="ltr">
@@ -23,47 +23,47 @@ const SingleProduct: NextPage = () => {
                   <div className={styles.slickTrack}>
                      <div className={styles.slickSlide} aria-hidden="true" style={{width: 383}}>
                         <div>
-                           <div className={styles.slideImg}><img src="http://sociala.uitheme.net/assets/images/pl9.png" alt="avater"/></div>
+                           <div className={styles.slideImg}><img src="/imgs/posts/product3.webp" alt="avater"/></div>
                         </div>
                      </div>
                      <div className={styles.slickSlide} style={{width: 383}} aria-hidden="false" >
                         <div>
-                           <div className={styles.slideImg}><img src="http://sociala.uitheme.net/assets/images/pl6.png" alt="avater" /></div>
+                           <div className={styles.slideImg}><img src="/imgs/posts/product4.webp" alt="avater" /></div>
                         </div>
                      </div>
                      <div className={styles.slickSlide} style={{width: 383}} aria-hidden="true">
                         <div>
-                           <div className={styles.slideImg}><img src="http://sociala.uitheme.net/assets/images/pl7.png" alt="avater" /></div>
+                           <div className={styles.slideImg}><img src="/imgs/posts/product1.webp" alt="avater" /></div>
                         </div>
                      </div>
                      <div className={styles.slickSlide} style={{width: 383}}  aria-hidden="true">
                         <div>
-                           <div className={styles.slideImg}><img src="http://sociala.uitheme.net/assets/images/pl8.png" alt="avater" /></div>
+                           <div className={styles.slideImg}><img src="/imgs/posts/product2.webp" alt="avater" /></div>
                         </div>
                      </div>
                      <div className={styles.slickSlide} style={{width: 383}}  aria-hidden="true">
                         <div>
-                           <div className={styles.slideImg}><img src="http://sociala.uitheme.net/assets/images/pl9.png" alt="avater" /></div>
+                           <div className={styles.slideImg}><img src="/imgs/posts/product3.webp" alt="avater" /></div>
                         </div>
                      </div>
                      <div className={styles.slickSlide} style={{width: 383}}  aria-hidden="true">
                         <div>
-                           <div className={styles.slideImg}><img src="http://sociala.uitheme.net/assets/images/pl6.png" alt="avater" /></div>
+                           <div className={styles.slideImg}><img src="/imgs/posts/product4.webp" alt="avater" /></div>
                         </div>
                      </div>
                      <div className={styles.slickSlide} style={{width: 383}}  aria-hidden="true">
                         <div>
-                           <div className={styles.slideImg}><img src="http://sociala.uitheme.net/assets/images/pl7.png" alt="avater" /></div>
+                           <div className={styles.slideImg}><img src="/imgs/posts/product1.webp" alt="avater" /></div>
                         </div>
                      </div>
                      <div className={styles.slickSlide} style={{width: 383}}  aria-hidden="true">
                         <div>
-                           <div className={styles.slideImg}><img src="http://sociala.uitheme.net/assets/images/pl8.png" alt="avater" /></div>
+                           <div className={styles.slideImg}><img src="/imgs/posts/product2.webp" alt="avater" /></div>
                         </div>
                      </div>
                      <div className={styles.slickSlide} style={{width: 383}}  aria-hidden="true">
                         <div>
-                           <div className={styles.slideImg}><img src="http://sociala.uitheme.net/assets/images/pl9.png" alt="avater" /></div>
+                           <div className={styles.slideImg}><img src="/imgs/posts/product3.webp" alt="avater" /></div>
                         </div>
                      </div>
                   </div>
@@ -83,11 +83,11 @@ const SingleProduct: NextPage = () => {
             <h4>DNMX</h4>
             <h2> Camisole with Adjustable Straps</h2>
             <div className={styles.stars}>
-                <img src="http://sociala.uitheme.net/assets/images/star.png" alt="star"/>
-                <img src="http://sociala.uitheme.net/assets/images/star.png" alt="star"/>
-                <img src="http://sociala.uitheme.net/assets/images/star.png" alt="star"/>
-                <img src="http://sociala.uitheme.net/assets/images/star.png" alt="star"/>
-                <img src="http://sociala.uitheme.net/assets/images/star-disable.png" alt="star"/>
+                <img src="/imgs/posts/star.png" alt="star"/>
+                <img src="/imgs/posts/star.png" alt="star"/>
+                <img src="/imgs/posts/star.png" alt="star"/>
+                <img src="/imgs/posts/star.png" alt="star"/>
+                <img src="/imgs/posts/star-disable.png" alt="star"/>
             </div>
             <p className={styles.reviewLink}> 2 customer review</p>
             <p className={styles.productDescription}>ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit arcu.</p>
@@ -101,7 +101,7 @@ const SingleProduct: NextPage = () => {
             <form action="#" className={styles.form}>
                <div className={styles.productAction}>
                   <div className={styles.quantity}>
-                     <input type="number" className={styles.quantityInput} name="qty" id="qty" min="1" />
+                     <input  type="number" className={styles.quantityInput} name="qty" id="qty" value="1" min="1" />
                      <div className={styles.dec}>-</div>
                      <div className={styles.inc}>+</div>
                   </div>
@@ -109,7 +109,7 @@ const SingleProduct: NextPage = () => {
                </div>
             </form>
             <ul className={styles.productFeature}>
-               <li className="w-50 lh-32 font-xsss text-grey-500 fw-500 float-left"><b className="text-grey-900"> Category : </b>Furniture</li>
+               <li className="w-50 lh-32 font-xsss text-grey-500 fw-500 float-left"><b className="text-grey-900"> Category : </b>Fashion</li>
                <li className="w-50 lh-32 font-xsss text-grey-500 fw-500 float-left">Straight fit</li>
                <li className="w-50 lh-32 font-xsss text-grey-500 fw-500 float-left"><b className="text-grey-900">SKU : </b> REF. LA-107</li>
                <li className="w-50 lh-32 font-xsss text-grey-500 fw-500 float-left">Dry clean</li>

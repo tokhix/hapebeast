@@ -247,7 +247,6 @@
 .emojis{
     font-weight: 600 !important;
     color: #212529 !important;
-    cursor: pointer;
     margin-right: 0.5rem !important;
     align-items: center !important;
     display: flex !important;
@@ -332,6 +331,7 @@
     width: 25px;
     height: 25px;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .hEmoji:hover {
     box-shadow: 0 8px 30px rgb(0 0 0 / 10%);

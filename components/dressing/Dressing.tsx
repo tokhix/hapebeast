@@ -16,28 +16,28 @@ const Dressing: NextPage = () => {
     
   }, [animated])
   const hats = [
-    {img: '/imgs/hats/1.png'},
-    {img: '/imgs/hats/2.png'},
-    {img: '/imgs/hats/3.png'},
-    {img: '/imgs/hats/4.png'},
+    {img: '/imgs/hats/1.webp'},
+    {img: '/imgs/hats/2.webp'},
+    {img: '/imgs/hats/3.webp'},
+    {img: '/imgs/hats/4.webp'},
   ]
   const chains = [
-    {img: '/imgs/chains/1.png'},
-    {img: '/imgs/chains/2.png'},
-    {img: '/imgs/chains/3.png'},
-    {img: '/imgs/chains/4.png'},
+    {img: '/imgs/chains/1.webp'},
+    {img: '/imgs/chains/2.webp'},
+    {img: '/imgs/chains/3.webp'},
+    {img: '/imgs/chains/4.webp'},
   ]
   const glasses = [
-    {img: '/imgs/glasses/1.png'},
-    {img: '/imgs/glasses/2.png'},
-    {img: '/imgs/glasses/3.png'},
-    {img: '/imgs/glasses/4.png'},
+    {img: '/imgs/glasses/1.webp'},
+    {img: '/imgs/glasses/2.webp'},
+    {img: '/imgs/glasses/3.webp'},
+    {img: '/imgs/glasses/4.webp'},
   ]
   const clothes = [
-    {img: '/imgs/clothes/nike.png'},
-    {img: '/imgs/clothes/adidas.png'},
-    {img: '/imgs/clothes/lacoste.png'},
-    {img: '/imgs/clothes/levis.png'},
+    {img: '/imgs/clothes/nike.webp'},
+    {img: '/imgs/clothes/adidas.webp'},
+    {img: '/imgs/clothes/lacoste.webp'},
+    {img: '/imgs/clothes/levis.webp'},
   ]
 
   const changeHat = (name:any, index: number) => {
@@ -47,7 +47,7 @@ const Dressing: NextPage = () => {
     })
     setAnimated(true)
   }
-  const imgUrl = `/imgs/hapes/${drip.hats}${drip.glasses}${drip.chains}${drip.clothes}.png`
+  const imgUrl = `/imgs/hapes/${drip.hats}${drip.glasses}${drip.chains}${drip.clothes}.webp`
 
   return (
     <div className={styles.dressing}>
@@ -58,6 +58,7 @@ const Dressing: NextPage = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4 }}
             className={`${styles.image} ${animated ? styles.glitch : ''}`} src={imgUrl}/>
+        {/* <img className={animated ? styles.rollOut : ''} src={`/imgs/0${drip.hats}${drip.chains}.jpg`} /> */}
       </div>
       <div className={styles.options}>
         <h1>STYLE YOUR HAPE</h1>
@@ -67,7 +68,7 @@ const Dressing: NextPage = () => {
           <ul className={styles.list}>
           {hats.map((hat, index) => { return (
             <li className={drip.hats == index + 1 ? styles.active: ''} onClick={() => changeHat('hats', index) } key={index}>
-              <Image src={hat.img} priority alt=""/>
+              <img src={hat.img} alt=""/>
             </li>
           )})}
           </ul>
@@ -78,7 +79,7 @@ const Dressing: NextPage = () => {
           <ul className={styles.list}>
           {glasses.map((glass, index) => { return (
             <li className={drip.glasses == index + 1 ? styles.active: ''} onClick={() => changeHat('glasses', index) } key={index}>
-              <Image src={glass.img} alt=""/>
+              <img src={glass.img} alt=""/>
             </li>
           )})}
           </ul>
@@ -89,7 +90,7 @@ const Dressing: NextPage = () => {
           <ul className={styles.list}>
           {chains.map((chain, index) => { return (
             <li className={drip.chains == index + 1 ? styles.active: ''} onClick={() => changeHat('chains', index) } key={index}>
-              <Image src={chain.img} alt=""/>
+              <img src={chain.img} alt=""/>
             </li>
           )})}
           </ul>
@@ -100,7 +101,7 @@ const Dressing: NextPage = () => {
           <ul className={styles.list}>
           {clothes.map((clothe, index) => { return (
             <li className={drip.clothes == index + 1 ? styles.active: ''} onClick={() => changeHat('clothes', index) } key={index}>
-              <Image src={clothe.img} alt=""/>
+              <img src={clothe.img} alt=""/>
             </li>
           )})}
           </ul>
