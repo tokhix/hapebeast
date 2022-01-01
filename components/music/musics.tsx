@@ -115,6 +115,7 @@ const Music: NextPage = () => {
          </motion.div>
          )})}
 
+         <Loading />
          </div>
       </div>
    </div>

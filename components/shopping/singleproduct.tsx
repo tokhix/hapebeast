@@ -80,8 +80,8 @@ const SingleProduct: NextPage = () => {
             </div>
          </div>
          <div className={styles.productRight}>
-            <h4>DNMX</h4>
-            <h2> Camisole with Adjustable Straps</h2>
+            <h4>COLLAB</h4>
+            <h2> Nike X Hape White Hoodie</h2>
             <div className={styles.stars}>
                 <img src="/imgs/posts/star.png" alt="star"/>
                 <img src="/imgs/posts/star.png" alt="star"/>
@@ -98,7 +98,7 @@ const SingleProduct: NextPage = () => {
                <div className={styles.timeCount}><span className={styles.textTime}>55</span> <span className={styles.textDay}>Min</span> </div>
                <div className={styles.timeCount}><span className={styles.textTime}>48</span> <span className={styles.textDay}>Sec</span> </div>
             </div>
-            <form action="#" className={styles.form}>
+            <form className={styles.form}>
                <div className={styles.productAction}>
                   <div className={styles.quantity}>
                      <input  type="number" className={styles.quantityInput} name="qty" id="qty" value="1" min="1" />

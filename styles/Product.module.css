@@ -225,6 +225,7 @@
     margin-top: 0;
     margin-bottom: 0.5rem;
     line-height: 1.2;
+    font-family: Hape;
 }
 .productRight h2{
     font-weight: 700 !important;
@@ -233,6 +234,7 @@
     line-height: 1.4;
     margin-top: 0;
     margin-bottom: 0.5rem;
+    font-family: Hape;
 }
 .stars {
     width: 100% !important;
@@ -272,6 +274,7 @@
     color: #05f !important;
     line-height: 1.2;
     margin-top: 0;
+    font-family: Hape;
 }
 .fontXl {
     font-size: 28px !important;

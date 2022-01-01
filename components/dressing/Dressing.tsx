@@ -8,6 +8,27 @@ import styles from '../../styles/Dressing.module.css'
 const Dressing: NextPage = () => {
   const [drip, setDrip] = useState<any>({hats: 0, glasses: 0, chains: 0, clothes: 0})
   const [animated, setAnimated] = useState<boolean>(true)
+  const [imgUrls, setImageUrls] = useState<Array<String>>([])
+  useEffect(() => {
+    let fragment = document.createDocumentFragment(); 
+    for (let hats=0;hats<5; hats++){
+      for (let glasses=0;glasses<5; glasses++){
+        for (let chains=0;chains<5; chains++){
+          for (let clothes=0;clothes<5; clothes++){
+            const imgUrl = `/imgs/hapes/${hats}${glasses}${chains}${clothes}.webp`
+            const linkEl = document.createElement('link');
+            linkEl.setAttribute('rel', 'preload');
+            linkEl.setAttribute('href', imgUrl);
+            linkEl.setAttribute('as', 'image');
+            fragment.appendChild(linkEl);    
+          }
+        }
+      }
+    } 
+
+    document.head.appendChild(fragment);
+
+  }, [])
 
   useEffect(() => {
     setTimeout(function () {
@@ -16,7 +37,7 @@ const Dressing: NextPage = () => {
     
   }, [animated])
   const hats = [
-    {img: '/imgs/hats/1.webp'},
+    {img: '/imgs/hats/nike.webp'},
     {img: '/imgs/hats/2.webp'},
     {img: '/imgs/hats/3.webp'},
     {img: '/imgs/hats/4.webp'},
