@@ -280,7 +280,7 @@
     display: inline-block;
     line-height: 45px !important;
     text-align: center;
-    background: linear-gradient(135deg, #1E74FD, #1E74FD) !important;
+    background: var(--accent1)
 }
 
 .Btn2 {
@@ -295,5 +295,5 @@
     line-height: 24px !important;
     letter-spacing: 1px;
     width: 100px !important;
-    background-color: #1E74FD;
+    background-color: var(--accent1);
 }

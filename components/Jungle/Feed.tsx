@@ -169,7 +169,7 @@ const Feed: NextPage = () => {
                   <p className={styles.postText}>This is my new HapeBeast decoration for christmas, Hape is part of our family now!  <a href="/defaultvideo" className={styles.seeMore}>#xmas-event</a></p>
                </div>
                <div className={styles.cardBodyP0}>
-                    <div className={styles.postImg}><img src="/imgs/posts/christman.JPG" className="rounded-3 w-100" alt="post" /></div>
+                    <div className={styles.postImg}><img src="/imgs/posts/christman.webp" className="rounded-3 w-100" alt="post" /></div>
                </div>
                <div className={`${styles.cardBodyP0} ${styles.marginTop}`}>
                     <div className={styles.emojis}>
@@ -244,7 +244,7 @@ I will continue to do whatever it takes to support our community and move it for
                      <div data-index="-7" tabIndex={-1}  className={styles.slickSlide} aria-hidden="true">
                         <div>
                            <div className={styles.userCard} style={{width: 200}} tabIndex={-1}>
-                              <div className={styles.bgImage} style={{backgroundImage: "url('http://sociala.uitheme.net/assets/images/u-bg.webp')"}}></div>
+                              <div className={styles.bgImage} style={{backgroundImage: "url('/imgs/posts/background.webp')"}}></div>
                               <div className={styles.userInfo}>
                                  <figure className={styles.userImg}><img src="/imgs/users/10.webp" alt="avater"/></figure>
                                  <h4>Pic Asso</h4>
@@ -257,7 +257,7 @@ I will continue to do whatever it takes to support our community and move it for
                      <div data-index="-7" tabIndex={-1}  className={styles.slickSlide} aria-hidden="true">
                         <div>
                            <div className={styles.userCard} style={{width: 200}} tabIndex={-1}>
-                              <div className={styles.bgImage} style={{backgroundImage: "url('http://sociala.uitheme.net/assets/images/u-bg.webp')"}}></div>
+                              <div className={styles.bgImage} style={{backgroundImage: "url('/imgs/posts/background2.webp')"}}></div>
                               <div className={styles.userInfo}>
                                  <figure className={styles.userImg}><img src="/imgs/users/9.webp" alt="avater"/></figure>
                                  <h4>Beat Hoven </h4>
@@ -270,9 +270,9 @@ I will continue to do whatever it takes to support our community and move it for
                      <div data-index="-7" tabIndex={-1}  className={styles.slickSlide} aria-hidden="true">
                         <div>
                            <div className={styles.userCard} style={{width: 200}} tabIndex={-1}>
-                              <div className={styles.bgImage} style={{backgroundImage: "url('http://sociala.uitheme.net/assets/images/u-bg.webp')"}}></div>
+                              <div className={styles.bgImage} style={{backgroundImage: "url('/imgs/posts/background3.webp')"}}></div>
                               <div className={styles.userInfo}>
-                                 <figure className={styles.userImg}><img src="/imgs/users/7.webp" alt="avater"/></figure>
+                                 <figure className={styles.userImg}><img src="/imgs/users/3.webp" alt="avater"/></figure>
                                  <h4>Mamiz Boy </h4>
                                  <p>Memer of the day</p>
                                  <span>Follow</span>

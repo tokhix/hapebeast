@@ -271,7 +271,7 @@
     margin-bottom: 0.5rem !important;
     font-size: 44px !important;
     letter-spacing: 0.6px;
-    color: #05f !important;
+    color: var(--accent1) !important;
     line-height: 1.2;
     margin-top: 0;
     font-family: Hape;
@@ -279,7 +279,7 @@
 .fontXl {
     font-size: 28px !important;
     letter-spacing: 0.6px;
-    color: #05f !important;
+    color: var(--accent1) !important;
 }
 .fontXs {
     color: #adb5bd !important;
@@ -398,13 +398,13 @@
 .addToCart {
     font-weight: 700 !important;
     border-radius: 0.3rem !important;
-    background-color: #343a40 !important;
+    background-color: var(--accent1) !important;
     color: #fff !important;
     text-transform: uppercase !important;
     text-align: center !important;
     padding: 1rem !important;
     margin-top: 0 !important;
-    border-color: #343a40 !important;
+    border-color: var(--accent1) !important;
     border: 1px solid #E1E1F0 !important;
     display: inline-block !important;
     font-size: 12px !important;

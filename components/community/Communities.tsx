@@ -86,9 +86,6 @@ const Communities: NextPage = () => {
                                 <h4>{community.name}</h4>
                                 <p>{community.description}</p>
                                 <span className={styles.communityBtns}>
-                                    <a href="/defaultgroup" className={styles.Btn1}>
-                                        <span className="lnr lnr-user"></span>
-                                    </a>
                                     <a href="/defaultgroup" className={styles.Btn2}>JOIN</a>
                                 </span>
                             </div>

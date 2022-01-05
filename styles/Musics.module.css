@@ -125,7 +125,7 @@
     font-family: Poppins;
 }
 .cardBodyContent span{    
-    color: #1E74FD !important;
+    color: var(--accent1) !important;
     margin-right: 0.5rem !important;
     font-size: 18px !important;
     width: 35px;
@@ -226,7 +226,7 @@
 }
 .seeMore{
     font-weight: 600 !important;
-    color: #1E74FD !important;
+    color: var(--accent1) !important;
     margin-left: 0.5rem !important;
 }
 
@@ -337,6 +337,6 @@
     box-shadow: 0 8px 30px rgb(0 0 0 / 10%);
 }
 .selected {
-    background-color: #000;
+    background-color: var(--accent1);
     color: #fff;
 }

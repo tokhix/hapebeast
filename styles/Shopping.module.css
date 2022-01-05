@@ -236,7 +236,7 @@
     line-height: 30px !important;
     letter-spacing: 1px;
     width: 150px !important;
-    background: linear-gradient(135deg, #05f, #09f) !important;
+    background: var(--accent1) !important;
     font-family: Hape;
 }
 
@@ -278,6 +278,7 @@
     background-clip: border-box;
     border-radius: 0.25rem;
     font-family: Poppins;
+    cursor: pointer;
 }
 .productImg {
     border-radius: 0.3rem !important;
@@ -345,7 +346,7 @@
     line-height: 32px;
     letter-spacing: 1px;
     width: 150px !important;
-    background: linear-gradient(135deg, #05f, #09f) !important;
+    background: var(--accent1) !important;
     font-family: Poppins;
 }
 

@@ -46,7 +46,7 @@
 .cardTitle a {
     font-weight: 600 !important;
     margin-left: auto !important;
-    color: #1E74FD !important;
+    color: var(--accent1) !important;
     font-size: 12px !important;
 }
 
