@@ -10,7 +10,7 @@ const Layout = (props: any) => {
     return (
       <>
             <Head>
-                <title>HAPEBEAST</title>
+                <title>HAPEBEASTGANG</title>
                 <link rel="icon" href="/favicon.ico" />
                 <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet" />
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossOrigin="anonymous" />
