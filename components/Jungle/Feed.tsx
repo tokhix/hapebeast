@@ -32,6 +32,7 @@ const Feed: NextPage = () => {
       },
     ]
    const [postLiked, setPostLiked] = useState([0, 0, 0])
+   
 
    const likePost = (index: number) => {
       const newLikes = [...postLiked]
